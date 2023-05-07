@@ -14,5 +14,5 @@ insert into orders (person_id, product_name, product_price, quantity) values
 ;
 select * from orders;
 select sum(quantity) from orders;
-select sum(product_price) from orders;
-select sum(product_price) from orders where person_id = 1
+select sum(product_price * quantity) from orders;
+select sum(product_price * quantity) from orders where person_id = 1
