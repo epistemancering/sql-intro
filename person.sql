@@ -1,4 +1,4 @@
-create table person(
+create table person (
     id serial,
     name text,
     age decimal,
@@ -14,7 +14,7 @@ insert into person (name, age, height, city, favorite_color) values
     ('Kara', 31, 167, 'Copenhagen', 'red')
 ;
 select * from person order by 4 desc;
-select * from person order by 4 asc;
+select * from person order by 4;
 select * from person order by 3 desc;
 select * from person where 20 < age;
 select * from person where age = 18;

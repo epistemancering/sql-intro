@@ -4,6 +4,6 @@ insert into artist (artist_id, name) values
     (278, 'Panic! at the Disco')
 ;
 select * from artist order by 2 desc limit 10;
-select * from artist order by 2 asc limit 5;
+select * from artist order by 2 limit 5;
 select * from artist where name like 'Black%';
 select * from artist where name like '%Black%'

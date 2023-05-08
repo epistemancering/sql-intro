@@ -1,4 +1,4 @@
-create table orders(
+create table orders (
     order_id serial,
     person_id decimal,
     product_name text,
@@ -13,6 +13,6 @@ insert into orders (person_id, product_name, product_price, quantity) values
     (4, 'Put The Finger On You', 5, 5)
 ;
 select * from orders;
-select sum(quantity) from orders;
-select sum(product_price * quantity) from orders;
-select sum(product_price * quantity) from orders where person_id = 1
+select sum (quantity) from orders;
+select sum (product_price * quantity) from orders;
+select sum (product_price * quantity) from orders where person_id = 1
